@@ -33,7 +33,6 @@ func (s *Server) handleGetMetadata() http.HandlerFunc {
 			http.Error(w, fmt.Sprintf("could not write JSON to response:\n%v", err), http.StatusInternalServerError)
 			return
 		}
-		w.WriteHeader(http.StatusOK)
 	}
 }
 
@@ -50,7 +49,6 @@ func (s *Server) handlePostMetadata() http.HandlerFunc {
 			http.Error(w, fmt.Sprintf("request does not contain valid YAML:\n%v", err), http.StatusBadRequest)
 			return
 		}
-		fmt.Printf("%+v\n", metadata)
 		err = s.storage.ValidateMetadata(metadata)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)

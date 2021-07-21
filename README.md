@@ -1,5 +1,4 @@
 # API Server Exercise
-API to 
 
 ## Running the Application
 You must have an installation of Go in order to run the application. Run the following command within the application's directory:

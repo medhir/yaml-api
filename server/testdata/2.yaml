@@ -1,0 +1,14 @@
+title: Application 3
+version: 20.0.2
+maintainers:
+- name: AppTwo Maintainer
+  email: apptwo@hotmail.com
+company: Upbound Inc.
+website: https://upbound.io
+source: https://github.com/upbound/repo
+license: Apache-2.0
+description: |
+ ### App 3 is the best
+ You can no longer deny it.
+ ## A second heading
+ More app 3 details...
